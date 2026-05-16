@@ -612,13 +612,16 @@ All five services will run at the same time and log events at the same terminal 
 
 Now that your workflow is running, you can use the [Diagrid Dashboard](https://www.diagrid.io/blog/improving-the-local-dapr-workflow-experience-diagrid-dashboard) to visually inspect the workflow state. It is a local containerized UI that connects directly to your Redis state store — no extra configuration needed.
 
-Start the dashboard in a new terminal:
+Start the dashboard in a new terminal from the `workflow-workshop` folder:
 
 ```bash
-docker run -p 8080:8080 ghcr.io/diagridio/diagrid-dashboard:latest
+docker run --network host \
+  -e COMPONENT_FILE=/component/statestore.yaml \
+  -v $(pwd)/resources/statestore.yaml:/component/statestore.yaml \
+  ghcr.io/diagridio/diagrid-dashboard:latest
 ```
 
-Open your browser at `http://localhost:8080`. From there you can:
+`--network host` is required so the container can reach the Redis instance running on your machine. Open your browser at `http://localhost:8080`. From there you can:
 
 - **View all workflow instances** — see running, completed, and failed workflows at a glance.
 - **Inspect execution details** — drill into a specific workflow to examine its input, output, and history.
