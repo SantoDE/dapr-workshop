@@ -683,6 +683,24 @@ dapr run -f .
 
 All five services will run at the same time and log events at the same terminal window.
 
+## Visualize the Workflow with the Diagrid Dashboard
+
+Now that your workflow is running, you can use the [Diagrid Dashboard](https://www.diagrid.io/blog/improving-the-local-dapr-workflow-experience-diagrid-dashboard) to visually inspect the workflow state. It is a local containerized UI that connects directly to your Redis state store — no extra configuration needed.
+
+Start the dashboard in a new terminal:
+
+```bash
+docker run -p 8080:8080 ghcr.io/diagridio/diagrid-dashboard:latest
+```
+
+Open your browser at `http://localhost:8080`. From there you can:
+
+- **View all workflow instances** — see running, completed, and failed workflows at a glance.
+- **Inspect execution details** — drill into a specific workflow to examine its input, output, and history.
+- **Expand individual steps** — click any event in the Execution History table to review detailed step information, useful for debugging the validation pause and each activity.
+
+Start a new pizza order via the REST Client, then refresh the dashboard to watch the workflow progress through each step in real time.
+
 ## Next steps
 
 Congratulations, you have completed all the challenges and you can claim your [reward](../completion.md)!
