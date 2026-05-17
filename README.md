@@ -51,4 +51,11 @@ Now you will modify the application to orchestrate the process of ordering, cook
 ## Get started
 
 No existing knowledge of Dapr or microservices is needed to complete this workshop but basic programming skills for your language of choice are required.
-Today this workshop offers challenges in .NET and Python. Complete the [technical prerequisites](./docs/prerequisites.md) and start the first challenge!
+Today this workshop offers challenges in .NET, Python, and Go. Complete the [technical prerequisites](./docs/prerequisites.md) and start the first challenge!
+
+| Challenge | Python | .NET | Go |
+|-----------|--------|------|----|
+| 1 - State Management | [python.md](./docs/challenge-1/python.md) | [dotnet.md](./docs/challenge-1/dotnet.md) | [go.md](./docs/challenge-1/go.md) |
+| 2 - Service Invocation | [python.md](./docs/challenge-2/python.md) | [dotnet.md](./docs/challenge-2/dotnet.md) | [go.md](./docs/challenge-2/go.md) |
+| 3 - Pub/Sub | [python.md](./docs/challenge-3/python.md) | [dotnet.md](./docs/challenge-3/dotnet.md) | [go.md](./docs/challenge-3/go.md) |
+| 4 - Workflows | [python.md](./docs/challenge-4/python.md) | [dotnet.md](./docs/challenge-4/dotnet.md) | [go.md](./docs/challenge-4/go.md) |
