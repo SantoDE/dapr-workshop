@@ -203,4 +203,4 @@ curl -H 'Content-Type: application/json' \
 
 ## Next Steps
 
-Now that the services are updating the event information for every order step, you need to make sure that this information is being updated in the Redis state store. You will do this in the next challenge using Dapr [Pub/Sub](/docs/challenge-3/dotnet.md)!
+Now that the services are updating the event information for every order step, you need to make sure that this information is being updated in the Redis state store. You will do this in the next challenge using Dapr [Pub/Sub](/docs/challenge-3/python.md)!
