@@ -213,4 +213,4 @@ If you downloaded Redis Insight, you can visualize the new order there:
 
 ## Next steps
 
-Create a new service to create the order, cook, and deliver the pizza. In the next challenge, you will learn how to create a new API endpoint and how to invoke it using Dapr. When you are ready, go to Challenge 2: [Service Invocation](/docs/challenge-2/dotnet.md)!
+Create a new service to create the order, cook, and deliver the pizza. In the next challenge, you will learn how to create a new API endpoint and how to invoke it using Dapr. When you are ready, go to Challenge 2: [Service Invocation](/docs/challenge-2/python.md)!
